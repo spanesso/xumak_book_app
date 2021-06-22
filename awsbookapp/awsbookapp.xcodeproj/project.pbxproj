@@ -1,0 +1,884 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0F58AE5AF79D7D97FD1E5E12 /* Pods_awsbookapp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C199F392B097483D98A605D /* Pods_awsbookapp.framework */; };
+		786B024958D9454528A9C435 /* Pods_awsbookapp_awsbookappUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F5FB29FF6B97A5914B3455F /* Pods_awsbookapp_awsbookappUITests.framework */; };
+		83BE65F1268189CB00373B56 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83BE65F0268189CB00373B56 /* AppDelegate.swift */; };
+		83BE65F3268189CB00373B56 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83BE65F2268189CB00373B56 /* SceneDelegate.swift */; };
+		83BE65F5268189CB00373B56 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83BE65F4268189CB00373B56 /* ViewController.swift */; };
+		83BE65F8268189CB00373B56 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 83BE65F6268189CB00373B56 /* Main.storyboard */; };
+		83BE65FA268189CD00373B56 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 83BE65F9268189CD00373B56 /* Assets.xcassets */; };
+		83BE65FD268189CD00373B56 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 83BE65FB268189CD00373B56 /* LaunchScreen.storyboard */; };
+		83BE6608268189CD00373B56 /* awsbookappTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83BE6607268189CD00373B56 /* awsbookappTests.swift */; };
+		83BE6613268189CD00373B56 /* awsbookappUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83BE6612268189CD00373B56 /* awsbookappUITests.swift */; };
+		83FD11D826818D290080D062 /* BooksViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83FD11D726818D290080D062 /* BooksViewModel.swift */; };
+		83FD11DA26818D4F0080D062 /* BooksDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83FD11D926818D4F0080D062 /* BooksDataManager.swift */; };
+		83FD11DC26818D680080D062 /* BooksRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83FD11DB26818D680080D062 /* BooksRepository.swift */; };
+		83FD11E026818DD80080D062 /* Book.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83FD11DF26818DD80080D062 /* Book.swift */; };
+		83FD11E226818EF50080D062 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83FD11E126818EF50080D062 /* Constants.swift */; };
+		83FD11E526818F750080D062 /* BaseRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83FD11E426818F750080D062 /* BaseRepository.swift */; };
+		83FD11EC268196DC0080D062 /* BookViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 83FD11EB268196DC0080D062 /* BookViewCell.xib */; };
+		83FD11EE268198B30080D062 /* BookViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83FD11ED268198B30080D062 /* BookViewCell.swift */; };
+		83FD11F12681A1D10080D062 /* UIImageViw+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83FD11F02681A1D10080D062 /* UIImageViw+Extension.swift */; };
+		CC16FFD43DE84BCECF0598F9 /* Pods_awsbookappTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 02C24E8CF58DA76582008C59 /* Pods_awsbookappTests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		83BE6604268189CD00373B56 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 83BE65E5268189CB00373B56 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 83BE65EC268189CB00373B56;
+			remoteInfo = awsbookapp;
+		};
+		83BE660F268189CD00373B56 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 83BE65E5268189CB00373B56 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 83BE65EC268189CB00373B56;
+			remoteInfo = awsbookapp;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		02C24E8CF58DA76582008C59 /* Pods_awsbookappTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_awsbookappTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		11092BE27F51DC3EB78D7B4C /* Pods-awsbookapp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-awsbookapp.release.xcconfig"; path = "Target Support Files/Pods-awsbookapp/Pods-awsbookapp.release.xcconfig"; sourceTree = "<group>"; };
+		2F5FB29FF6B97A5914B3455F /* Pods_awsbookapp_awsbookappUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_awsbookapp_awsbookappUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3C199F392B097483D98A605D /* Pods_awsbookapp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_awsbookapp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4091742225AC4CFCC3437BD1 /* Pods-awsbookapp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-awsbookapp.debug.xcconfig"; path = "Target Support Files/Pods-awsbookapp/Pods-awsbookapp.debug.xcconfig"; sourceTree = "<group>"; };
+		6508C18040E6F40686C5AC1E /* Pods-awsbookapp-awsbookappUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-awsbookapp-awsbookappUITests.release.xcconfig"; path = "Target Support Files/Pods-awsbookapp-awsbookappUITests/Pods-awsbookapp-awsbookappUITests.release.xcconfig"; sourceTree = "<group>"; };
+		83BE65ED268189CB00373B56 /* awsbookapp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = awsbookapp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		83BE65F0268189CB00373B56 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		83BE65F2268189CB00373B56 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		83BE65F4268189CB00373B56 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		83BE65F7268189CB00373B56 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		83BE65F9268189CD00373B56 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		83BE65FC268189CD00373B56 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		83BE65FE268189CD00373B56 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		83BE6603268189CD00373B56 /* awsbookappTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = awsbookappTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		83BE6607268189CD00373B56 /* awsbookappTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = awsbookappTests.swift; sourceTree = "<group>"; };
+		83BE6609268189CD00373B56 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		83BE660E268189CD00373B56 /* awsbookappUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = awsbookappUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		83BE6612268189CD00373B56 /* awsbookappUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = awsbookappUITests.swift; sourceTree = "<group>"; };
+		83BE6614268189CD00373B56 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		83FD11D726818D290080D062 /* BooksViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BooksViewModel.swift; sourceTree = "<group>"; };
+		83FD11D926818D4F0080D062 /* BooksDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BooksDataManager.swift; sourceTree = "<group>"; };
+		83FD11DB26818D680080D062 /* BooksRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BooksRepository.swift; sourceTree = "<group>"; };
+		83FD11DF26818DD80080D062 /* Book.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Book.swift; sourceTree = "<group>"; };
+		83FD11E126818EF50080D062 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		83FD11E426818F750080D062 /* BaseRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseRepository.swift; sourceTree = "<group>"; };
+		83FD11EB268196DC0080D062 /* BookViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BookViewCell.xib; sourceTree = "<group>"; };
+		83FD11ED268198B30080D062 /* BookViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookViewCell.swift; sourceTree = "<group>"; };
+		83FD11F02681A1D10080D062 /* UIImageViw+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageViw+Extension.swift"; sourceTree = "<group>"; };
+		8CCC011ADB856C71301B4972 /* Pods-awsbookapp-awsbookappUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-awsbookapp-awsbookappUITests.debug.xcconfig"; path = "Target Support Files/Pods-awsbookapp-awsbookappUITests/Pods-awsbookapp-awsbookappUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		B6CE2F3776B558D72E56B250 /* Pods-awsbookappTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-awsbookappTests.debug.xcconfig"; path = "Target Support Files/Pods-awsbookappTests/Pods-awsbookappTests.debug.xcconfig"; sourceTree = "<group>"; };
+		CE5C16550B984E2E9DB284AC /* Pods-awsbookappTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-awsbookappTests.release.xcconfig"; path = "Target Support Files/Pods-awsbookappTests/Pods-awsbookappTests.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		83BE65EA268189CB00373B56 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0F58AE5AF79D7D97FD1E5E12 /* Pods_awsbookapp.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		83BE6600268189CD00373B56 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CC16FFD43DE84BCECF0598F9 /* Pods_awsbookappTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		83BE660B268189CD00373B56 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				786B024958D9454528A9C435 /* Pods_awsbookapp_awsbookappUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		836235BE26818A8200F9B309 /* app */ = {
+			isa = PBXGroup;
+			children = (
+				83BE65F2268189CB00373B56 /* SceneDelegate.swift */,
+				83BE65F0268189CB00373B56 /* AppDelegate.swift */,
+				83FD11E126818EF50080D062 /* Constants.swift */,
+			);
+			path = app;
+			sourceTree = "<group>";
+		};
+		836235BF26818A8F00F9B309 /* implementation */ = {
+			isa = PBXGroup;
+			children = (
+				836235C126818AAD00F9B309 /* home */,
+				836235C026818AA500F9B309 /* splash */,
+			);
+			path = implementation;
+			sourceTree = "<group>";
+		};
+		836235C026818AA500F9B309 /* splash */ = {
+			isa = PBXGroup;
+			children = (
+				83BE65FB268189CD00373B56 /* LaunchScreen.storyboard */,
+			);
+			path = splash;
+			sourceTree = "<group>";
+		};
+		836235C126818AAD00F9B309 /* home */ = {
+			isa = PBXGroup;
+			children = (
+				83FD11D626818CF30080D062 /* model */,
+				83FD11D126818C360080D062 /* viewModel */,
+				83FD11D026818C310080D062 /* view */,
+			);
+			path = home;
+			sourceTree = "<group>";
+		};
+		83BE65E4268189CB00373B56 = {
+			isa = PBXGroup;
+			children = (
+				83BE65EF268189CB00373B56 /* awsbookapp */,
+				83BE6606268189CD00373B56 /* awsbookappTests */,
+				83BE6611268189CD00373B56 /* awsbookappUITests */,
+				83BE65EE268189CB00373B56 /* Products */,
+				CA08FD5226E0BBF335528320 /* Pods */,
+				83FF8F0B8AF239FC9BBF168B /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		83BE65EE268189CB00373B56 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				83BE65ED268189CB00373B56 /* awsbookapp.app */,
+				83BE6603268189CD00373B56 /* awsbookappTests.xctest */,
+				83BE660E268189CD00373B56 /* awsbookappUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		83BE65EF268189CB00373B56 /* awsbookapp */ = {
+			isa = PBXGroup;
+			children = (
+				83FD11EF2681A1BC0080D062 /* extensions */,
+				83FD11D326818C590080D062 /* base */,
+				836235BF26818A8F00F9B309 /* implementation */,
+				83BE65F9268189CD00373B56 /* Assets.xcassets */,
+				83BE65FE268189CD00373B56 /* Info.plist */,
+			);
+			path = awsbookapp;
+			sourceTree = "<group>";
+		};
+		83BE6606268189CD00373B56 /* awsbookappTests */ = {
+			isa = PBXGroup;
+			children = (
+				83BE6607268189CD00373B56 /* awsbookappTests.swift */,
+				83BE6609268189CD00373B56 /* Info.plist */,
+			);
+			path = awsbookappTests;
+			sourceTree = "<group>";
+		};
+		83BE6611268189CD00373B56 /* awsbookappUITests */ = {
+			isa = PBXGroup;
+			children = (
+				83BE6612268189CD00373B56 /* awsbookappUITests.swift */,
+				83BE6614268189CD00373B56 /* Info.plist */,
+			);
+			path = awsbookappUITests;
+			sourceTree = "<group>";
+		};
+		83FD11D026818C310080D062 /* view */ = {
+			isa = PBXGroup;
+			children = (
+				83FD11E8268196AC0080D062 /* cell */,
+				83BE65F4268189CB00373B56 /* ViewController.swift */,
+				83BE65F6268189CB00373B56 /* Main.storyboard */,
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
+		83FD11D126818C360080D062 /* viewModel */ = {
+			isa = PBXGroup;
+			children = (
+				83FD11D726818D290080D062 /* BooksViewModel.swift */,
+			);
+			path = viewModel;
+			sourceTree = "<group>";
+		};
+		83FD11D326818C590080D062 /* base */ = {
+			isa = PBXGroup;
+			children = (
+				83FD11E326818F630080D062 /* repo */,
+				836235BE26818A8200F9B309 /* app */,
+				83FD11DD26818DC60080D062 /* models */,
+			);
+			path = base;
+			sourceTree = "<group>";
+		};
+		83FD11D626818CF30080D062 /* model */ = {
+			isa = PBXGroup;
+			children = (
+				83FD11D926818D4F0080D062 /* BooksDataManager.swift */,
+				83FD11DB26818D680080D062 /* BooksRepository.swift */,
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
+		83FD11DD26818DC60080D062 /* models */ = {
+			isa = PBXGroup;
+			children = (
+				83FD11DF26818DD80080D062 /* Book.swift */,
+			);
+			path = models;
+			sourceTree = "<group>";
+		};
+		83FD11E326818F630080D062 /* repo */ = {
+			isa = PBXGroup;
+			children = (
+				83FD11E426818F750080D062 /* BaseRepository.swift */,
+			);
+			path = repo;
+			sourceTree = "<group>";
+		};
+		83FD11E8268196AC0080D062 /* cell */ = {
+			isa = PBXGroup;
+			children = (
+				83FD11EB268196DC0080D062 /* BookViewCell.xib */,
+				83FD11ED268198B30080D062 /* BookViewCell.swift */,
+			);
+			path = cell;
+			sourceTree = "<group>";
+		};
+		83FD11EF2681A1BC0080D062 /* extensions */ = {
+			isa = PBXGroup;
+			children = (
+				83FD11F02681A1D10080D062 /* UIImageViw+Extension.swift */,
+			);
+			path = extensions;
+			sourceTree = "<group>";
+		};
+		83FF8F0B8AF239FC9BBF168B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3C199F392B097483D98A605D /* Pods_awsbookapp.framework */,
+				2F5FB29FF6B97A5914B3455F /* Pods_awsbookapp_awsbookappUITests.framework */,
+				02C24E8CF58DA76582008C59 /* Pods_awsbookappTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CA08FD5226E0BBF335528320 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				4091742225AC4CFCC3437BD1 /* Pods-awsbookapp.debug.xcconfig */,
+				11092BE27F51DC3EB78D7B4C /* Pods-awsbookapp.release.xcconfig */,
+				8CCC011ADB856C71301B4972 /* Pods-awsbookapp-awsbookappUITests.debug.xcconfig */,
+				6508C18040E6F40686C5AC1E /* Pods-awsbookapp-awsbookappUITests.release.xcconfig */,
+				B6CE2F3776B558D72E56B250 /* Pods-awsbookappTests.debug.xcconfig */,
+				CE5C16550B984E2E9DB284AC /* Pods-awsbookappTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		83BE65EC268189CB00373B56 /* awsbookapp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 83BE6617268189CD00373B56 /* Build configuration list for PBXNativeTarget "awsbookapp" */;
+			buildPhases = (
+				6D9740FF0CB35FABE752D537 /* [CP] Check Pods Manifest.lock */,
+				83BE65E9268189CB00373B56 /* Sources */,
+				83BE65EA268189CB00373B56 /* Frameworks */,
+				83BE65EB268189CB00373B56 /* Resources */,
+				35A01272FDB1939791FF1122 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = awsbookapp;
+			productName = awsbookapp;
+			productReference = 83BE65ED268189CB00373B56 /* awsbookapp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		83BE6602268189CD00373B56 /* awsbookappTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 83BE661A268189CD00373B56 /* Build configuration list for PBXNativeTarget "awsbookappTests" */;
+			buildPhases = (
+				48DF7A460D28FCADADAE10BC /* [CP] Check Pods Manifest.lock */,
+				83BE65FF268189CD00373B56 /* Sources */,
+				83BE6600268189CD00373B56 /* Frameworks */,
+				83BE6601268189CD00373B56 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				83BE6605268189CD00373B56 /* PBXTargetDependency */,
+			);
+			name = awsbookappTests;
+			productName = awsbookappTests;
+			productReference = 83BE6603268189CD00373B56 /* awsbookappTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		83BE660D268189CD00373B56 /* awsbookappUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 83BE661D268189CD00373B56 /* Build configuration list for PBXNativeTarget "awsbookappUITests" */;
+			buildPhases = (
+				65A10150CD2E6AB257D9D577 /* [CP] Check Pods Manifest.lock */,
+				83BE660A268189CD00373B56 /* Sources */,
+				83BE660B268189CD00373B56 /* Frameworks */,
+				83BE660C268189CD00373B56 /* Resources */,
+				879A80C4FFC268259A14B611 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				83BE6610268189CD00373B56 /* PBXTargetDependency */,
+			);
+			name = awsbookappUITests;
+			productName = awsbookappUITests;
+			productReference = 83BE660E268189CD00373B56 /* awsbookappUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		83BE65E5268189CB00373B56 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1250;
+				LastUpgradeCheck = 1250;
+				TargetAttributes = {
+					83BE65EC268189CB00373B56 = {
+						CreatedOnToolsVersion = 12.5;
+					};
+					83BE6602268189CD00373B56 = {
+						CreatedOnToolsVersion = 12.5;
+						TestTargetID = 83BE65EC268189CB00373B56;
+					};
+					83BE660D268189CD00373B56 = {
+						CreatedOnToolsVersion = 12.5;
+						TestTargetID = 83BE65EC268189CB00373B56;
+					};
+				};
+			};
+			buildConfigurationList = 83BE65E8268189CB00373B56 /* Build configuration list for PBXProject "awsbookapp" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 83BE65E4268189CB00373B56;
+			productRefGroup = 83BE65EE268189CB00373B56 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				83BE65EC268189CB00373B56 /* awsbookapp */,
+				83BE6602268189CD00373B56 /* awsbookappTests */,
+				83BE660D268189CD00373B56 /* awsbookappUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		83BE65EB268189CB00373B56 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				83FD11EC268196DC0080D062 /* BookViewCell.xib in Resources */,
+				83BE65FD268189CD00373B56 /* LaunchScreen.storyboard in Resources */,
+				83BE65FA268189CD00373B56 /* Assets.xcassets in Resources */,
+				83BE65F8268189CB00373B56 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		83BE6601268189CD00373B56 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		83BE660C268189CD00373B56 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		35A01272FDB1939791FF1122 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-awsbookapp/Pods-awsbookapp-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-awsbookapp/Pods-awsbookapp-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-awsbookapp/Pods-awsbookapp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		48DF7A460D28FCADADAE10BC /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-awsbookappTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		65A10150CD2E6AB257D9D577 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-awsbookapp-awsbookappUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6D9740FF0CB35FABE752D537 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-awsbookapp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		879A80C4FFC268259A14B611 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-awsbookapp-awsbookappUITests/Pods-awsbookapp-awsbookappUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-awsbookapp-awsbookappUITests/Pods-awsbookapp-awsbookappUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-awsbookapp-awsbookappUITests/Pods-awsbookapp-awsbookappUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		83BE65E9268189CB00373B56 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				83FD11F12681A1D10080D062 /* UIImageViw+Extension.swift in Sources */,
+				83FD11DA26818D4F0080D062 /* BooksDataManager.swift in Sources */,
+				83BE65F5268189CB00373B56 /* ViewController.swift in Sources */,
+				83FD11E026818DD80080D062 /* Book.swift in Sources */,
+				83FD11E526818F750080D062 /* BaseRepository.swift in Sources */,
+				83FD11D826818D290080D062 /* BooksViewModel.swift in Sources */,
+				83BE65F1268189CB00373B56 /* AppDelegate.swift in Sources */,
+				83FD11DC26818D680080D062 /* BooksRepository.swift in Sources */,
+				83FD11EE268198B30080D062 /* BookViewCell.swift in Sources */,
+				83BE65F3268189CB00373B56 /* SceneDelegate.swift in Sources */,
+				83FD11E226818EF50080D062 /* Constants.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		83BE65FF268189CD00373B56 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				83BE6608268189CD00373B56 /* awsbookappTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		83BE660A268189CD00373B56 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				83BE6613268189CD00373B56 /* awsbookappUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		83BE6605268189CD00373B56 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 83BE65EC268189CB00373B56 /* awsbookapp */;
+			targetProxy = 83BE6604268189CD00373B56 /* PBXContainerItemProxy */;
+		};
+		83BE6610268189CD00373B56 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 83BE65EC268189CB00373B56 /* awsbookapp */;
+			targetProxy = 83BE660F268189CD00373B56 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		83BE65F6268189CB00373B56 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				83BE65F7268189CB00373B56 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		83BE65FB268189CD00373B56 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				83BE65FC268189CD00373B56 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		83BE6615268189CD00373B56 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		83BE6616268189CD00373B56 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		83BE6618268189CD00373B56 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4091742225AC4CFCC3437BD1 /* Pods-awsbookapp.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7SCL6UM96D;
+				INFOPLIST_FILE = awsbookapp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = xumak.awsbookapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		83BE6619268189CD00373B56 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 11092BE27F51DC3EB78D7B4C /* Pods-awsbookapp.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7SCL6UM96D;
+				INFOPLIST_FILE = awsbookapp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = xumak.awsbookapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		83BE661B268189CD00373B56 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B6CE2F3776B558D72E56B250 /* Pods-awsbookappTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7SCL6UM96D;
+				INFOPLIST_FILE = awsbookappTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = xumak.awsbookappTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/awsbookapp.app/awsbookapp";
+			};
+			name = Debug;
+		};
+		83BE661C268189CD00373B56 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CE5C16550B984E2E9DB284AC /* Pods-awsbookappTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7SCL6UM96D;
+				INFOPLIST_FILE = awsbookappTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = xumak.awsbookappTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/awsbookapp.app/awsbookapp";
+			};
+			name = Release;
+		};
+		83BE661E268189CD00373B56 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8CCC011ADB856C71301B4972 /* Pods-awsbookapp-awsbookappUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7SCL6UM96D;
+				INFOPLIST_FILE = awsbookappUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = xumak.awsbookappUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = awsbookapp;
+			};
+			name = Debug;
+		};
+		83BE661F268189CD00373B56 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6508C18040E6F40686C5AC1E /* Pods-awsbookapp-awsbookappUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7SCL6UM96D;
+				INFOPLIST_FILE = awsbookappUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = xumak.awsbookappUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = awsbookapp;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		83BE65E8268189CB00373B56 /* Build configuration list for PBXProject "awsbookapp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				83BE6615268189CD00373B56 /* Debug */,
+				83BE6616268189CD00373B56 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		83BE6617268189CD00373B56 /* Build configuration list for PBXNativeTarget "awsbookapp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				83BE6618268189CD00373B56 /* Debug */,
+				83BE6619268189CD00373B56 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		83BE661A268189CD00373B56 /* Build configuration list for PBXNativeTarget "awsbookappTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				83BE661B268189CD00373B56 /* Debug */,
+				83BE661C268189CD00373B56 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		83BE661D268189CD00373B56 /* Build configuration list for PBXNativeTarget "awsbookappUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				83BE661E268189CD00373B56 /* Debug */,
+				83BE661F268189CD00373B56 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 83BE65E5268189CB00373B56 /* Project object */;
+}
